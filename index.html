@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRILOCHAN DASH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-blue-900">TRILOCHAN DASH</h1>
+
+<!-- Desktop Menu -->
+<nav class="space-x-6 hidden md:block">
+  <a href="#about" class="nav-link text-gray-700 hover:text-blue-800 font-medium">About</a>
+  <a href="#initiatives" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Initiatives</a>
+  <a href="#impact" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Impact</a>
+  <a href="#timeline" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Milestones</a>
+  <a href="#gallery" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Gallery</a>
+  <a href="#contact" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Contact</a>
+</nav>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menuBtn" class="md:hidden text-2xl text-blue-900 focus:outline-none z-10">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+    <div class="flex justify-between items-center px-6 py-4 border-b">
+      <h2 class="text-xl font-bold text-blue-900">Menu</h2>
+      <button id="closeBtn" class="text-2xl text-blue-900 focus:outline-none">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+<nav class="flex flex-col p-6 space-y-4 text-gray-700 font-medium">
+  <a href="#about" class="nav-link text-gray-700 hover:text-blue-800">About</a>
+  <a href="#initiatives" class="nav-link text-gray-700 hover:text-blue-800">Initiatives</a>
+  <a href="#impact" class="nav-link text-gray-700 hover:text-blue-800">Impact</a>
+  <a href="#timeline" class="nav-link text-gray-700 hover:text-blue-800">Milestones</a>
+  <a href="#gallery" class="nav-link text-gray-700 hover:text-blue-800">Gallery</a>
+  <a href="#contact" class="nav-link text-gray-700 hover:text-blue-800">Contact</a>
+</nav>
+
+  </div>
+
+  <!-- Overlay when menu is open -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+</header>
+
+<!-- Script -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeBtn = document.getElementById('closeBtn');
+  const overlay = document.getElementById('overlay');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+    overlay.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+  });
+
+  overlay.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+  });
+
+
+
+  // Add active class toggle
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => {
+      l.classList.remove('text-blue-800', 'font-semibold', 'underline', 'underline-offset-4');
+      l.classList.add('text-gray-700');
+    });
+
+    link.classList.add('text-blue-800', 'font-semibold', 'underline', 'underline-offset-4');
+    link.classList.remove('text-gray-700');
+  });
+});
+
+</script>
+<!-- Hero Section with Circular Image and Social Icons (Responsive) -->
+<section class="bg-blue-900 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Text Section -->
+    <div class="text-center md:text-left">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Empowering Change</h1>
+      <p class="text-base sm:text-lg mb-6">Through education and community service, we're building a better tomorrow with passion and purpose.</p>
+
+      <!-- Learn More Button -->
+      <a href="#about" class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition inline-block">Learn More</a>
+
+      <!-- Social Media Label and Icons -->
+      <div class="mt-6">
+        <p class="font-semibold mb-2">Follow me on:</p>
+        <div class="flex justify-center md:justify-start gap-4">
+          <a href="#" class="text-white text-2xl hover:text-gray-300 transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white text-2xl hover:text-gray-300 transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-2xl hover:text-gray-300 transition"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Circular Image Section -->
+    <div class="flex justify-center md:justify-end">
+      <div class="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSr1WI3ZXg1bKhfKOAAUopYKjmDizrOaxIpA&s" alt="Hero" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- About Section (Text Only) -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">About the Founder</h2>
+      <p class="text-lg text-gray-700 mb-4">With over a decade of dedication to education and community welfare, our founder has established a reputation for impactful leadership and selfless service.</p>
+      <p class="text-lg text-gray-700">The mission is to empower youth, uplift marginalized groups, and promote values that transform lives through education and outreach.</p>
+    </div>
+  </section>
+
+<!-- NGO & Institute Section -->
+<section id="initiatives" class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 mb-12">
+      Our Initiatives
+    </h2>
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Utkal Foundation -->
+      <div class="relative rounded-2xl shadow-xl overflow-hidden flex flex-col justify-between h-full hover:shadow-2xl transition-all duration-300 border-b-4 border-blue-200 hover:border-blue-500">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/NGO.jpg');"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <!-- Content -->
+        <div class="relative p-8 z-10 flex flex-col justify-between h-full">
+          <div>
+            <div class="flex mb-6">
+              <div class="bg-white bg-opacity-80 rounded-full shadow-md flex items-center justify-center h-20 w-20">
+  <img src="https://utkalfoundation.in/images/Logo_Utkal.png" alt="Utkal Foundation Logo" class="h-28 w-28 object-contain">
+</div>
+
+            </div>
+            <h3 class="text-2xl font-semibold text-white mb-2 text-center">Utkal Foundation</h3>
+            <p class="text-gray-100 text-center mb-6 leading-relaxed">
+              Health camps, women empowerment, youth training programs, and sustainable livelihood campaigns led by Utkal Foundation.
+            </p>
+          </div>
+          <div class="text-center mt-auto">
+            <a href="https://utkalfoundation.in/" target="_blank" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-2 rounded-full shadow hover:shadow-lg hover:scale-105 transition-transform">
+              Visit Site
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Utkal Computer Academy -->
+<div class="relative rounded-2xl shadow-xl overflow-hidden flex flex-col justify-between h-full hover:shadow-2xl transition-all duration-300 border-b-4 border-blue-200 hover:border-blue-500">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/Education.jpg');"></div>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+
+  <!-- Content -->
+  <div class="relative p-8 z-10 flex flex-col justify-between h-full">
+    <div>
+      <!-- Logo Left Aligned -->
+      <div class="flex mb-6">
+        <div class="bg-white bg-opacity-80 rounded-full shadow-md flex items-center justify-center h-20 w-20">
+          <img src="https://utkalacademy.in/images/Logo_Web.png" alt="Utkal Computer Academy Logo" class="h-28 w-28 object-contain">
+        </div>
+      </div>
+
+      <!-- Center-Aligned Content -->
+      <h3 class="text-2xl font-semibold text-white mb-2 text-center">Utkal Computer Academy</h3>
+      <p class="text-gray-100 text-center mb-6 leading-relaxed">
+        Digital classrooms, free coaching for underprivileged students, and leadership development programs offered by Utkal Computer Academy.
+      </p>
+    </div>
+
+    <!-- Button Fixed at Bottom Center -->
+    <div class="text-center mt-auto">
+      <a href="https://utkalacademy.in/" target="_blank" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-2 rounded-full shadow hover:shadow-lg hover:scale-105 transition-transform">
+        Visit Site
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Stats Section -->
+  <section id="impact" class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Our Impact</h2>
+      <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6 text-center">
+        <div class="p-6 bg-blue-100 rounded-xl shadow">
+          <h3 class="text-3xl font-bold text-blue-900">150+</h3>
+          <p class="mt-2 text-gray-700">Scholarships Given</p>
+        </div>
+        <div class="p-6 bg-green-100 rounded-xl shadow">
+          <h3 class="text-3xl font-bold text-green-900">30K+</h3>
+          <p class="mt-2 text-gray-700">Lives Impacted</p>
+        </div>
+        <div class="p-6 bg-yellow-100 rounded-xl shadow">
+          <h3 class="text-3xl font-bold text-yellow-800">120+</h3>
+          <p class="mt-2 text-gray-700">Health Camps</p>
+        </div>
+        <div class="p-6 bg-purple-100 rounded-xl shadow">
+          <h3 class="text-3xl font-bold text-purple-900">18</h3>
+          <p class="mt-2 text-gray-700">Years of Service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-20 bg-gray-100">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Milestones</h2>
+      <div class="relative border-l-4 border-blue-900 pl-6 space-y-10">
+        <div>
+          <h3 class="text-xl font-bold text-blue-900">2008 – NGO Foundation</h3>
+          <p class="text-gray-700">Launched with 5 volunteers and a vision to serve rural India.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-blue-900">2014 – Education Programs</h3>
+          <p class="text-gray-700">Opened first after-school center for slum children.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-blue-900">2019 – Digital Expansion</h3>
+          <p class="text-gray-700">Adopted hybrid learning tools and remote education services.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-blue-900">2023 – 30K Lives Reached</h3>
+          <p class="text-gray-700">Surpassed 30,000+ direct beneficiaries across 4 states.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-blue-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform">
+          <img src="https://utkalfoundation.in/images/IMG-20220415-WA0017.jpg" alt="Gallery Image 1" class="w-full h-60 object-cover" />
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform">
+          <img src="https://utkalfoundation.in/images/IMG_20211218_1615381.jpg" alt="Gallery Image 2" class="w-full h-60 object-cover" />
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform">
+          <img src="https://utkalfoundation.in/images/IMG_20220508_1726361.jpg" alt="Gallery Image 3" class="w-full h-60 object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Contact Us</h2>
+      <form class="space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 px-5 py-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+        <input type="email" placeholder="Email" class="w-full border border-gray-300 px-5 py-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+        <textarea placeholder="Message" class="w-full border border-gray-300 px-5 py-3 rounded h-40 focus:outline-none focus:ring-2 focus:ring-blue-300" required></textarea>
+        <button type="submit" class="bg-blue-900 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- About Section -->
+    <div>
+      <h3 class="font-bold text-lg mb-2">Trilochan Dash</h3>
+      <p class="text-sm">Empowering communities through education, health, and leadership programs.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#initiatives" class="hover:underline">Initiatives</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info + Social Icons -->
+    <div>
+      <h3 class="font-bold text-lg mb-2">Contact Info</h3>
+      <p class="text-sm">Email: example@ngo.org</p>
+      <p class="text-sm mb-4">Phone: +91 9876543210</p>
+
+      <!-- Social Media Icons -->
+      <p class="font-semibold mb-2">Follow me on:</p>
+      <div class="flex justify-center md:justify-start gap-4 text-2xl">
+        <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center mt-8 text-sm border-t border-blue-700 pt-4">
+    &copy; 2025 Trilochan Dash | All Rights Reserved
+  </div>
+</footer>
+
+
+</body>
+</html>

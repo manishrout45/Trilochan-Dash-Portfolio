@@ -27,7 +27,7 @@
 <nav class="space-x-6 hidden md:block">
   <a href="#about" class="nav-link text-gray-700 hover:text-blue-800 font-medium">About</a>
   <a href="#initiatives" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Initiatives</a>
-  <a href="#impact" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Impact</a>
+  
   <a href="#timeline" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Milestones</a>
   <a href="#gallery" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Gallery</a>
   <a href="#contact" class="nav-link text-gray-700 hover:text-blue-800 font-medium">Contact</a>
@@ -50,7 +50,7 @@
 <nav class="flex flex-col p-6 space-y-4 text-gray-700 font-medium">
   <a href="#about" class="nav-link text-gray-700 hover:text-blue-800">About</a>
   <a href="#initiatives" class="nav-link text-gray-700 hover:text-blue-800">Initiatives</a>
-  <a href="#impact" class="nav-link text-gray-700 hover:text-blue-800">Impact</a>
+  
   <a href="#timeline" class="nav-link text-gray-700 hover:text-blue-800">Milestones</a>
   <a href="#gallery" class="nav-link text-gray-700 hover:text-blue-800">Gallery</a>
   <a href="#contact" class="nav-link text-gray-700 hover:text-blue-800">Contact</a>
@@ -107,11 +107,13 @@ navLinks.forEach(link => {
   <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
     
     <!-- Left: Uniquely Shaped Image -->
-    <div class="flex justify-center md:justify-end">
-      <div class="relative transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out w-72 h-72 sm:w-80 sm:h-80 overflow-hidden shadow-2xl border-[6px] border-blue-700 rounded-3xl scale-105 skew-y-3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSr1WI3ZXg1bKhfKOAAUopYKjmDizrOaxIpA&s" alt="Trilochan Dash" class="w-full h-full object-cover" />
-      </div>
-    </div>
+<div class="flex justify-center">
+  <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] md:-ml-6 overflow-hidden shadow-2xl border-[6px] border-blue-700 rounded-full hover:scale-105 transition duration-500 ease-in-out">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSr1WI3ZXg1bKhfKOAAUopYKjmDizrOaxIpA&s" alt="Trilochan Dash" class="w-full h-full object-cover" />
+  </div>
+</div>
+
+
 
     <!-- Right: Text Content -->
     <div class="text-center md:text-left space-y-6">
@@ -158,7 +160,7 @@ navLinks.forEach(link => {
 
     <!-- Image Section -->
     <div class="w-full md:w-1/2 flex justify-center">
-      <div class="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
+      <div class="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80  overflow-hidden shadow-lg">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSr1WI3ZXg1bKhfKOAAUopYKjmDizrOaxIpA&s" alt="Founder" class="w-full h-full object-cover" />
       </div>
     </div>
@@ -294,7 +296,7 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
   </div>
 </section>
 
-<section class="bg-white py-20 px-6">
+<section id="initiatives" class="bg-white py-20 px-6">
   <div class="max-w-7xl mx-auto">
     
     <!-- Header with Logo -->
@@ -323,10 +325,10 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
             </ul>
           </div>
         </div>
-        <div class="p-6 pt-0 text-right">
+        <div class="p-6 pt-0 text-right"><a href="https://utkalfoundation.in/" target="_blank" rel="noopener noreferrer">
           <button class="inline-block px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
             Learn More
-          </button>
+          </button></a>
         </div>
       </div>
 
@@ -349,17 +351,17 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
             </ul>
           </div>
         </div>
-        <div class="p-6 pt-0 text-right">
+        <div class="p-6 pt-0 text-right"><a href="https://utkalacademy.in/" target="_blank" rel="noopener noreferrer">         
           <button class="inline-block px-5 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300">
             Learn More
-          </button>
+          </button></a>
         </div>
       </div>
 
       <!-- Nalanda Bhubaneswar -->
-      <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between">
+      <div class="bg-gradient-to-br from-red-100 to-red-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="bg-purple-600 p-4 flex items-center">
+          <div class="bg-red-600 p-4 flex items-center">
             <img src="https://www.thenalanda.com/wp-content/uploads/2024/04/nit-logo-1.jpg" alt="Logo" class="w-10 h-10 mr-3 rounded-full">
             <div>
               <h3 class="text-white text-xl font-bold">Nalanda Bhubaneswar</h3>
@@ -376,10 +378,10 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
             </ul>
           </div>
         </div>
-        <div class="p-6 pt-0 text-right">
-          <button class="inline-block px-5 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition duration-300">
+        <div class="p-6 pt-0 text-right"><a href="https://www.thenalanda.com/" target="_blank" rel="noopener noreferrer">
+          <button class="inline-block px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition duration-300">
             Learn More
-          </button>
+          </button></a>
         </div>
       </div>
 
@@ -632,7 +634,7 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
   <!-- Contact Section -->
   <section id="contact" class="py-20 bg-gray-100">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Contact Us</h2>
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Contact Me</h2>
       <form class="space-y-6">
         <input type="text" placeholder="Your Name" class="w-full border border-gray-300 px-5 py-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         <input type="email" placeholder="Email" class="w-full border border-gray-300 px-5 py-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-300" required>

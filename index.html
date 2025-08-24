@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TRILOCHAN DASH</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- For Font Awesome 6 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
   <!-- AOS Animation CSS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
@@ -144,7 +145,7 @@ navLinks.forEach(link => {
         <div class="flex gap-5 justify-center md:justify-start text-2xl">
           <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-x-twitter"></i></a>
           <a href="#" class="hover:text-gray-300 transition"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
@@ -179,7 +180,7 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
   <!-- Left Column -->
   <div class="space-y-2">
     <p><span class="font-semibold text-blue-900">Name:</span> Trilochan Dash</p>
-    <p><span class="font-semibold text-blue-900">Date of Birth:</span> 15th August 1985</p>
+    <p><span class="font-semibold text-blue-900">Date of Birth:</span> 15th August 1988</p>
     <p><span class="font-semibold text-blue-900">Address:</span> Bhadrak, Odisha, India</p>
   </div>
 
@@ -203,94 +204,139 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
   </div>
 </section>
 
-<section class="bg-blue-900 py-20">
+<section id="biography" class="relative bg-gradient-to-r from-blue-50 via-white to-blue-50 py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    
+    <!-- Decorative Quote Icon -->
+    <div class="absolute top-2 left-10 text-blue-200 text-7xl opacity-20 select-none">
+      <i class="fas fa-quote-left"></i>
+    </div>
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-extrabold text-blue-900 tracking-wide">Biography</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+    </div>
+
+    <!-- Biography Content -->
+    <div class="text-lg text-gray-700 leading-relaxed space-y-6 bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-xl">
+      <p>
+        My journey has been defined by a passion for <span class="font-semibold text-blue-700">education, innovation, and community service</span>. 
+        From an early stage in life, I embraced the values of leadership and compassion, driven by the belief that knowledge 
+        and empathy can change lives. This philosophy has guided me in creating impactful initiatives that bring people together 
+        and strengthen society.
+      </p>
+
+      <p>
+        Over the years, I have founded and led organizations dedicated to <span class="italic text-blue-800">digital literacy, skill development, 
+        youth empowerment, and social responsibility</span>. These initiatives have not only created opportunities but also 
+        built lasting frameworks of growth and sustainability for future generations.
+      </p>
+
+      <p>
+        Today, my vision continues to be shaped by the belief that <span class="font-semibold text-blue-700">true leadership lies in service</span>. 
+        Every project, training program, and campaign I have undertaken has been a step toward empowering individuals, 
+        nurturing talent, and creating a society that thrives on collective progress and innovation.
+      </p>
+    </div>
+
+    <!-- Closing Note -->
+    <div class="text-center mt-10">
+      <p class="text-2xl font-bold text-blue-900 italic">“Empowering people is the first step to transforming society.”</p>
+      <p class="text-sm text-gray-500 mt-2">– Your Name</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-20">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
-    <h2 class="text-4xl font-bold text-center text-white mb-14">Skills & Tools</h2>
+    <!-- Section Title -->
+    <h2 class="text-4xl font-extrabold text-center text-white mb-14">Skills & Tools</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Skill Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Card 1 -->
-<div class="group relative bg-white border border-blue-100 rounded-t-3xl rounded-b-none p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 hover:border-blue-300">
-  <div class="flex items-center space-x-4 mb-4">
-    <div class="w-14 h-14 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-2xl">
-      <i class="fas fa-users-cog"></i>
-    </div>
-    <h3 class="text-xl font-semibold text-blue-900 group-hover:text-blue-700">Leadership & Administration</h3>
-  </div>
-  <div class="flex flex-wrap gap-2">
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Team Management</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Program Planning</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Coordination</span>
-  </div>
-  <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-</div>
+      <!-- Skill Item -->
+      <div class="relative group p-8 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-white/20 hover:shadow-2xl hover:bg-white/20 transition-all duration-500">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-tr from-blue-400 to-blue-600 text-white text-2xl shadow-md">
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Leadership & Administration</h3>
+        </div>
+        <p class="text-gray-200 text-sm leading-relaxed mb-4">Expertise in guiding teams, planning programs, and coordinating organizational success.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Team Management</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Program Planning</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Coordination</span>
+        </div>
+      </div>
 
-<!-- Card 2 -->
-<div class="group relative bg-white border border-blue-100 rounded-t-3xl rounded-b-none p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 hover:border-blue-300">
-  <div class="flex items-center space-x-4 mb-4">
-    <div class="w-14 h-14 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-2xl">
-      <i class="fas fa-desktop"></i>
-    </div>
-    <h3 class="text-xl font-semibold text-blue-900 group-hover:text-blue-700">Computer Education</h3>
-  </div>
-  <div class="flex flex-wrap gap-2">
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">MS Office</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Advanced Apps</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Tally</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Internet Tools</span>
-  </div>
-  <span class="absolute bottom-0 left-0 w-full h-1 bg-green-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-</div>
+      <!-- Skill Item -->
+      <div class="relative group p-8 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-white/20 hover:shadow-2xl hover:bg-white/20 transition-all duration-500">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-tr from-green-400 to-green-600 text-white text-2xl shadow-md">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Computer Education</h3>
+        </div>
+        <p class="text-gray-200 text-sm leading-relaxed mb-4">Delivering digital literacy and professional computer skills for future careers.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">MS Office</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Tally</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Internet Tools</span>
+        </div>
+      </div>
 
-<!-- Card 3 -->
-<div class="group relative bg-white border border-blue-100 rounded-t-3xl rounded-b-none p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 hover:border-blue-300">
-  <div class="flex items-center space-x-4 mb-4">
-    <div class="w-14 h-14 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-2xl">
-      <i class="fas fa-project-diagram"></i>
-    </div>
-    <h3 class="text-xl font-semibold text-blue-900 group-hover:text-blue-700">Organizational Development</h3>
-  </div>
-  <div class="flex flex-wrap gap-2">
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">NGO Management</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Event Planning</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Project Execution</span>
-  </div>
-  <span class="absolute bottom-0 left-0 w-full h-1 bg-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-</div>
+      <!-- Skill Item -->
+      <div class="relative group p-8 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-white/20 hover:shadow-2xl hover:bg-white/20 transition-all duration-500">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-tr from-purple-400 to-purple-600 text-white text-2xl shadow-md">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Organizational Development</h3>
+        </div>
+        <p class="text-gray-200 text-sm leading-relaxed mb-4">Building strategies for NGOs, event planning, and project execution with impact.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">NGO Management</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Event Planning</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Project Execution</span>
+        </div>
+      </div>
 
-<!-- Card 4 -->
-<div class="group relative bg-white border border-blue-100 rounded-t-3xl rounded-b-none p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 hover:border-blue-300">
-  <div class="flex items-center space-x-4 mb-4">
-    <div class="w-14 h-14 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-2xl">
-      <i class="fas fa-user-friends"></i>
-    </div>
-    <h3 class="text-xl font-semibold text-blue-900 group-hover:text-blue-700">Soft Skills</h3>
-  </div>
-  <div class="flex flex-wrap gap-2">
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Communication</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Problem-Solving</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Time Management</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Community Engagement</span>
-  </div>
-  <span class="absolute bottom-0 left-0 w-full h-1 bg-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-</div>
+      <!-- Skill Item -->
+      <div class="relative group p-8 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-white/20 hover:shadow-2xl hover:bg-white/20 transition-all duration-500">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-tr from-pink-400 to-pink-600 text-white text-2xl shadow-md">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Soft Skills</h3>
+        </div>
+        <p class="text-gray-200 text-sm leading-relaxed mb-4">Essential interpersonal and professional skills for success in diverse environments.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Communication</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Problem-Solving</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Time Management</span>
+        </div>
+      </div>
 
-<!-- Card 5 -->
-<div class="group relative bg-white border border-blue-100 rounded-t-3xl rounded-b-none p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 hover:border-blue-300">
-  <div class="flex items-center space-x-4 mb-4">
-    <div class="w-14 h-14 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-2xl">
-      <i class="fas fa-language"></i>
-    </div>
-    <h3 class="text-xl font-semibold text-blue-900 group-hover:text-blue-700">Languages</h3>
-  </div>
-  <div class="flex flex-wrap gap-2">
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Odia</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Hindi</span>
-    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">English</span>
-  </div>
-  <span class="absolute bottom-0 left-0 w-full h-1 bg-yellow-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-</div>
-
+      <!-- Skill Item -->
+      <div class="relative group p-8 rounded-2xl bg-white/10 backdrop-blur-lg shadow-xl border border-white/20 hover:shadow-2xl hover:bg-white/20 transition-all duration-500">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-tr from-yellow-400 to-yellow-600 text-white text-2xl shadow-md">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Languages</h3>
+        </div>
+        <p class="text-gray-200 text-sm leading-relaxed mb-4">Fluent in multiple languages to connect with communities and cultures.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Odia</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">Hindi</span>
+          <span class="px-3 py-1 text-xs font-medium bg-white/20 text-white rounded-full">English</span>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -325,10 +371,19 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
             </ul>
           </div>
         </div>
-        <div class="p-6 pt-0 text-right"><a href="https://utkalfoundation.in/" target="_blank" rel="noopener noreferrer">
-          <button class="inline-block px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-            Learn More
-          </button></a>
+        <!-- Footer with Social + Website Icon -->
+        <div class="p-6 pt-0 flex justify-between items-center">
+          <!-- Social Icons -->
+          <div class="flex space-x-4 text-blue-600 text-xl">
+            <a href="https://www.facebook.com/share/1JnhY2a6Td/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/utkaltrust?igsh=MTZxbDdxcXA4OGN4cw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a> <!-- Or fa-x-twitter -->
+          </div>
+          <!-- Website Icon -->
+          <a href="https://utkalfoundation.in/" target="_blank" class="text-blue-600 text-2xl hover:text-blue-800">
+            <i class="fas fa-globe"></i>
+          </a>
         </div>
       </div>
 
@@ -336,7 +391,7 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
       <div class="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between">
         <div>
           <div class="bg-green-600 p-4 flex items-center">
-            <img src="https://utkalacademy.in/images/Logo_Web.png" alt="Logo" class="w-18 h-4 mr-3 rounded-full">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0Tvj0MBX6Vbcg1OPJmIU-wV7MZXwkDHNIg&s" alt="Logo" class="w-22 h-16 mr-3 rounded-full">
             <div>
               <h3 class="text-white text-xl font-bold">WON Computer Institution</h3>
               <p class="text-green-100 text-sm">Founder & Director</p>
@@ -351,10 +406,17 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
             </ul>
           </div>
         </div>
-        <div class="p-6 pt-0 text-right"><a href="https://utkalacademy.in/" target="_blank" rel="noopener noreferrer">         
-          <button class="inline-block px-5 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300">
-            Learn More
-          </button></a>
+        <!-- Footer with Social + Website Icon -->
+        <div class="p-6 pt-0 flex justify-between items-center">
+          <div class="flex space-x-4 text-green-600 text-xl">
+            <a href="https://www.facebook.com/profile.php?id=100093124640996&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+          </div>
+          <a href="https://utkalacademy.in/About.html" target="_blank" class="text-green-600 text-2xl hover:text-green-800">
+            <i class="fas fa-globe"></i>
+          </a>
         </div>
       </div>
 
@@ -362,9 +424,9 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
       <div class="bg-gradient-to-br from-red-100 to-red-50 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col justify-between">
         <div>
           <div class="bg-red-600 p-4 flex items-center">
-            <img src="https://www.thenalanda.com/wp-content/uploads/2024/04/nit-logo-1.jpg" alt="Logo" class="w-10 h-10 mr-3 rounded-full">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzosIuwcc1ZlpDVf-foBbWziTcG06UE_Wl2g&s" alt="Logo" class="w-22 h-16 mr-3 rounded-full">
             <div>
-              <h3 class="text-white text-xl font-bold">Nalanda Bhubaneswar</h3>
+              <h3 class="text-white text-xl font-bold">Nalanda institute of technology</h3>
               <p class="text-purple-100 text-sm">Admin Department</p>
             </div>
           </div>
@@ -378,16 +440,24 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
             </ul>
           </div>
         </div>
-        <div class="p-6 pt-0 text-right"><a href="https://www.thenalanda.com/" target="_blank" rel="noopener noreferrer">
-          <button class="inline-block px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition duration-300">
-            Learn More
-          </button></a>
+        <!-- Footer with Social + Website Icon -->
+        <div class="p-6 pt-0 flex justify-between items-center">
+          <div class="flex space-x-4 text-red-600 text-xl">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+          </div>
+          <a href="https://www.thenalanda.com/" target="_blank" class="text-red-600 text-2xl hover:text-red-800">
+            <i class="fas fa-globe"></i>
+          </a>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 <!-- NGO & Institute Section 
@@ -504,16 +574,18 @@ I also proudly serve in the <b>Department of Administration</b> at <b>Nalanda Bh
   <div class="max-w-3xl mx-auto px-4">
     <h2 class="text-4xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Milestones</h2>
     <div class="relative border-l-4 border-blue-900 pl-6 space-y-10">
-      <div data-aos="fade-right">
-        <h3 class="text-xl font-bold text-blue-900">2012 – Utkal Foundation</h3>
-        <p class="text-gray-700">	Launched and led impactful social programs in education, health, environment, and rural empowerment. Built volunteer teams and coordinated with government and private sectors.</p>
-      </div>
       <div data-aos="fade-left">
-        <h3 class="text-xl font-bold text-blue-900">2015 –  Utkal Computer Academy</h3>
+        <h3 class="text-xl font-bold text-blue-900">2014 –  Utkal Computer Academy</h3>
         <p class="text-gray-700">Established a trusted platform for digital skill-building and career development.Mentored 500+ students and organized IT awareness camps.</p>
       </div>
+
       <div data-aos="fade-right">
-        <h3 class="text-xl font-bold text-blue-900">Continue – Nalanda Bhubaneswar </h3>
+        <h3 class="text-xl font-bold text-blue-900">2021 – Utkal Foundation</h3>
+        <p class="text-gray-700">	Launched and led impactful social programs in education, health, environment, and rural empowerment. Built volunteer teams and coordinated with government and private sectors.</p>
+      </div>
+      
+      <div data-aos="fade-right">
+        <h3 class="text-xl font-bold text-blue-900">2014 to Continue – Nalanda Bhubaneswar </h3>
         <p class="text-gray-700">Managed institutional systems, staff records, event execution, and office workflow.</p>
       </div>
     </div>
